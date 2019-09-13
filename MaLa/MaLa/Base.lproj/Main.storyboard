@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MaLa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-B2-hDP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1116"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-uT-KHr">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                                        <subviews>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6qC-Nd-gTd">
+                                                <rect key="frame" x="0.0" y="782" width="375" height="220"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="375" id="V69-lC-mfc"/>
+                                                    <constraint firstAttribute="height" constant="220" id="ZB7-c5-y6U"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="br9-w8-J8r"/>
+                                                </constraints>
+                                            </mapView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotpot" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-Rt-fN0">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="251" id="ToJ-DD-mj2"/>
+                                                    <constraint firstAttribute="width" constant="375" id="fb0-7k-0VK"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="251" id="rSX-g8-BKU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-tV-qCn" userLabel="second view">
+                                                <rect key="frame" x="0.0" y="251" width="375" height="223"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M a L a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19J-BJ-VAM">
+                                                        <rect key="frame" x="0.0" y="15" width="375" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="hUl-93-Viv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="38"/>
+                                                        <color key="textColor" red="0.78514093159999998" green="0.18209543819999999" blue="0.12541851400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uld-mz-XWY">
+                                                        <rect key="frame" x="0.0" y="95" width="375" height="128"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="375" id="CMB-WS-lbP"/>
+                                                            <constraint firstAttribute="height" constant="128" id="r4q-XE-xTf"/>
+                                                        </constraints>
+                                                        <string key="text">An authentic Sichuan hotpot restaurant that seeks to provide you with the most traditional Chinese delicious, the classic "Numb and Spicy". </string>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="19J-BJ-VAM" firstAttribute="top" secondItem="VHt-tV-qCn" secondAttribute="top" constant="15" id="Lwq-4j-W97"/>
+                                                    <constraint firstItem="uld-mz-XWY" firstAttribute="width" secondItem="19J-BJ-VAM" secondAttribute="width" id="W5j-r7-ArL"/>
+                                                    <constraint firstItem="19J-BJ-VAM" firstAttribute="width" secondItem="VHt-tV-qCn" secondAttribute="width" id="XWo-6F-9DH"/>
+                                                    <constraint firstItem="uld-mz-XWY" firstAttribute="centerX" secondItem="VHt-tV-qCn" secondAttribute="centerX" id="dXl-Ry-RA8"/>
+                                                    <constraint firstItem="uld-mz-XWY" firstAttribute="centerX" secondItem="VHt-tV-qCn" secondAttribute="centerX" id="o4h-Wz-vOO"/>
+                                                    <constraint firstAttribute="height" constant="223" id="rpS-84-2v1"/>
+                                                    <constraint firstItem="uld-mz-XWY" firstAttribute="top" secondItem="19J-BJ-VAM" secondAttribute="bottom" id="weu-8C-E8L"/>
+                                                    <constraint firstItem="19J-BJ-VAM" firstAttribute="centerX" secondItem="VHt-tV-qCn" secondAttribute="centerX" id="yqI-Jr-P0a"/>
+                                                    <constraint firstItem="uld-mz-XWY" firstAttribute="centerX" secondItem="VHt-tV-qCn" secondAttribute="centerX" id="zBn-Ap-HlU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBm-2L-HUQ" userLabel="third view">
+                                                <rect key="frame" x="0.0" y="484" width="375" height="298"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="MT2-Oa-RVM">
+                                                        <rect key="frame" x="27.666666666666657" y="0.0" width="320" height="267.66666666666669"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uw-ky-cN1">
+                                                                <rect key="frame" x="104.66666666666669" y="0.0" width="110.33333333333331" height="24"/>
+                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="19"/>
+                                                                <color key="textColor" red="0.67191970349999997" green="0.24452352520000001" blue="0.16466104979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 AM - 11 PM / Mon - Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTh-G8-Vcp">
+                                                                <rect key="frame" x="51.999999999999986" y="35" width="215.66666666666663" height="21.666666666666671"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyH-qM-pjd">
+                                                                <rect key="frame" x="121.33333333333331" y="67.666666666666629" width="77" height="24"/>
+                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="19"/>
+                                                                <color key="textColor" red="0.67191970349999997" green="0.24452352520000001" blue="0.16466104979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1052 Whitebick. Dr, San Jose, CA, 95129" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-S2-j71">
+                                                                <rect key="frame" x="0.0" y="102.66666666666663" width="320" height="21.666666666666671"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1I-bI-i3v">
+                                                                <rect key="frame" x="108.66666666666669" y="135.33333333333337" width="102.33333333333331" height="24"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="Contact Us:">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.67191970349999997" green="0.24452352520000001" blue="0.16466104979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="19" name="SnellRoundhand-Black"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(669) 467-9292" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfE-8g-XOj">
+                                                                <rect key="frame" x="99.333333333333343" y="170.33333333333337" width="121.33333333333334" height="21.666666666666657"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mala_hotpot@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KG-oI-egZ">
+                                                                <rect key="frame" x="62.999999999999986" y="203" width="193.66666666666663" height="21.666666666666657"/>
+                                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exs-YW-dms" userLabel="website">
+                                                                <rect key="frame" x="83" y="235.66666666666663" width="154" height="32"/>
+                                                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="18"/>
+                                                                <color key="tintColor" red="0.67191970349999997" green="0.24452352520000001" blue="0.16466104979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" title="WebSite: Click Me">
+                                                                    <color key="titleColor" red="0.098273046310000001" green="0.097681038080000004" blue="0.1215716228" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="webButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3q3-Af-mch"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="267.67000000000002" id="Y9g-jI-4zP"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="MT2-Oa-RVM" firstAttribute="centerX" secondItem="yBm-2L-HUQ" secondAttribute="centerX" id="ZUf-mX-Ij6"/>
+                                                    <constraint firstAttribute="height" constant="298" id="eja-Od-gTh"/>
+                                                    <constraint firstItem="MT2-Oa-RVM" firstAttribute="top" secondItem="yBm-2L-HUQ" secondAttribute="top" id="pU1-pm-Kys"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRb-X1-EpI">
+                                                <rect key="frame" x="0.0" y="1088.3333333333333" width="375" height="29.333333333333258"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
+                                                <color key="textColor" red="0.67191970349999997" green="0.24452352520000001" blue="0.16466104979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The One You Cannot Miss!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-r5-S7c">
+                                                <rect key="frame" x="0.0" y="1027" width="375" height="29.333333333333258"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
+                                                <color key="textColor" red="0.67191970349999997" green="0.24452352520000001" blue="0.16466104979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hRo-Rt-fN0" firstAttribute="top" secondItem="CaX-uT-KHr" secondAttribute="top" id="75v-RW-g3q"/>
+                                            <constraint firstItem="hRo-Rt-fN0" firstAttribute="centerX" secondItem="CaX-uT-KHr" secondAttribute="centerX" id="76j-JW-HW7"/>
+                                            <constraint firstItem="JRb-X1-EpI" firstAttribute="top" secondItem="fa4-r5-S7c" secondAttribute="bottom" constant="32" id="8Kq-jy-KX3"/>
+                                            <constraint firstItem="fa4-r5-S7c" firstAttribute="width" secondItem="JRb-X1-EpI" secondAttribute="width" id="CUi-JY-Zug"/>
+                                            <constraint firstItem="VHt-tV-qCn" firstAttribute="width" secondItem="CaX-uT-KHr" secondAttribute="width" id="GOe-Fd-aZR"/>
+                                            <constraint firstAttribute="height" constant="1150" id="LeJ-3D-ubG"/>
+                                            <constraint firstItem="yBm-2L-HUQ" firstAttribute="top" secondItem="VHt-tV-qCn" secondAttribute="bottom" constant="10" id="MUT-wa-Qqr"/>
+                                            <constraint firstItem="VHt-tV-qCn" firstAttribute="centerX" secondItem="CaX-uT-KHr" secondAttribute="centerX" id="NwT-Tq-4EL"/>
+                                            <constraint firstItem="fa4-r5-S7c" firstAttribute="top" secondItem="6qC-Nd-gTd" secondAttribute="bottom" constant="25" id="VOI-KQ-DDg"/>
+                                            <constraint firstItem="VHt-tV-qCn" firstAttribute="top" secondItem="hRo-Rt-fN0" secondAttribute="bottom" id="W97-EY-AxC"/>
+                                            <constraint firstAttribute="width" constant="375" id="Z5u-5w-9Xi"/>
+                                            <constraint firstItem="6qC-Nd-gTd" firstAttribute="top" secondItem="yBm-2L-HUQ" secondAttribute="bottom" id="kNU-He-Eh6"/>
+                                            <constraint firstItem="JRb-X1-EpI" firstAttribute="width" secondItem="yBm-2L-HUQ" secondAttribute="width" id="kfs-Qh-hZ3"/>
+                                            <constraint firstItem="JRb-X1-EpI" firstAttribute="centerX" secondItem="CaX-uT-KHr" secondAttribute="centerX" id="mD2-cg-eIB"/>
+                                            <constraint firstItem="yBm-2L-HUQ" firstAttribute="centerX" secondItem="CaX-uT-KHr" secondAttribute="centerX" id="otj-pb-f6z"/>
+                                            <constraint firstItem="fa4-r5-S7c" firstAttribute="centerX" secondItem="CaX-uT-KHr" secondAttribute="centerX" id="qVI-wU-LUc"/>
+                                            <constraint firstItem="yBm-2L-HUQ" firstAttribute="centerX" secondItem="CaX-uT-KHr" secondAttribute="centerX" id="xrD-1i-Zsb"/>
+                                            <constraint firstItem="6qC-Nd-gTd" firstAttribute="centerX" secondItem="CaX-uT-KHr" secondAttribute="centerX" id="zh7-zr-QIk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CaX-uT-KHr" secondAttribute="trailing" id="M3N-XA-rSQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="CaX-uT-KHr" secondAttribute="bottom" id="cFP-bf-mxI"/>
+                                    <constraint firstItem="CaX-uT-KHr" firstAttribute="top" secondItem="9MQ-B2-hDP" secondAttribute="top" id="gnl-9T-mZy"/>
+                                    <constraint firstItem="CaX-uT-KHr" firstAttribute="leading" secondItem="9MQ-B2-hDP" secondAttribute="leading" id="uAm-XR-vRs"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9MQ-B2-hDP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0n2-n3-Buw"/>
+                            <constraint firstItem="9MQ-B2-hDP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mvf-iw-Q2J"/>
+                            <constraint firstItem="CaX-uT-KHr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="P8w-z4-1Uk"/>
+                            <constraint firstItem="6qC-Nd-gTd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="QY3-gP-mBj"/>
+                            <constraint firstItem="yBm-2L-HUQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bWj-lr-iZ7"/>
+                            <constraint firstItem="9MQ-B2-hDP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gqx-Kk-4ac"/>
+                            <constraint firstItem="hRo-Rt-fN0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vVI-FB-nmL"/>
+                            <constraint firstItem="9MQ-B2-hDP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vzC-nT-63e"/>
+                            <constraint firstItem="yBm-2L-HUQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="wJX-1s-X2d"/>
+                            <constraint firstItem="VHt-tV-qCn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="woJ-HP-zcq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1150"/>
+                    <connections>
+                        <outlet property="mapView" destination="6qC-Nd-gTd" id="wNj-KQ-0vg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.52709359605913"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hotpot" width="259.20001220703125" height="172.80000305175781"/>
+    </resources>
+</document>
